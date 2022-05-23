@@ -11,6 +11,7 @@ const Movie = ({ item }) => {
 
   const movieID = doc(db, "users", `${user?.email}`);
 
+  // This did not run when the heart is clicked. The heart changes but the console never runs
   const saveShow = async () => {
     if (user?.email) {
       setLike(!like);
@@ -22,6 +23,7 @@ const Movie = ({ item }) => {
           img: item.backdrop_path,
         }),
       });
+      console.log("Show was saved");
     } else {
       alert("Please log in to save a movie");
     }

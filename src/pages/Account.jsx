@@ -1,6 +1,6 @@
 import React from "react";
 import SavedShows from "../components/SavedShows";
-// I need to resolve the issue with the database before I can begin applying the saved features
+
 const Account = () => {
   return (
     <>
@@ -16,7 +16,7 @@ const Account = () => {
           </div>
         </div>
       </div>
-      {/* <SavedShows /> */}
+      {<SavedShows />}
     </>
   );
 };
